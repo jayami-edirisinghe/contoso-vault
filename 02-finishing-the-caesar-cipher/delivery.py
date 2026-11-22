@@ -1,3 +1,7 @@
+
+#Part 3 Lab
+#Problem
+
 price: int = 1500
 if price > 1000:
  price -= 100
@@ -9,12 +13,27 @@ if price >= 500:
 else:
  band = "low"
 print(band)
+print()
 
 
-
+#Delivery Day Drill
 DAYS_IN_WEEK :int =7
-Day:int = int(input("Day:"))
-days_to_wait
+
+day:int = int(input("Day:"))   # 1 - 7 days
+days_to_wait:int = int(input("Days to Wait:" ))   #days_to_wait   # 0 -7 days
+
+delivery_day = day + days_to_wait
+
+print(delivery_day)
+
+if delivery_day > DAYS_IN_WEEK :
+   Delivery_day:int = delivery_day - DAYS_IN_WEEK
+
+print("Delivery Day:",Delivery_day)
+   
+
+print()
+
 
 
 item_code: str = "TEA-250G"
