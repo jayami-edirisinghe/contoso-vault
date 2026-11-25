@@ -39,12 +39,16 @@ assert 1 <= Delivery_Day <= DAYS_IN_WEEK
 print()
 
 
-
+#Bug hunt
 
 item_code: str = "TEA-250G"
 letters: int = 0
 
 for character in item_code:
- if "A" < character < "Z":
-  letters += 1
+ if "A" <= character <= "Z":
+  letters += 1     #letters = letters + 1
 print("Letters:", letters)
+
+# ANSWER 
+# if "A" < character < "Z":   this line has the bug because it only checks between A and Z so it has to be corrected as
+# if "A" <= character <= "Z":  so it inclued A and Z as well

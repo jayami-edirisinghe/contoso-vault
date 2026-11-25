@@ -1,23 +1,23 @@
 ALPHABET_SIZE = 26
 
-message: str = input("Message: ")   #AB$78
+message: str = input("Message: ")   
 key:int = int(input("Key:"))
 
-ciphertext =" "
+ciphertext =""
 
 #Encryption loop
 for character in message:
     if "A" <= character <= "Z":
-       shifted = ord(character) + key
+       shifted:int = ord(character) + key
        if shifted > ord("Z"):
            shifted -= ALPHABET_SIZE
        ciphertext += chr(shifted)
     else:
        ciphertext += character
 
-print ("Ciphertext:" , ciphertext)
+print ("Ciphertext:",ciphertext)
 
-plaintext =" "
+plaintext =""
 
 #Decryption loop
 for character in ciphertext:
@@ -30,9 +30,9 @@ for character in ciphertext:
         plaintext +=character
 
 
-print("Plaintext:", plaintext)
+print("Plaintext:",plaintext)
 
 #check if the message equal to plain text
+assert message == plaintext
 
-#assert message == plaintext, "The encryption-decryption loop doesn't close"
 
