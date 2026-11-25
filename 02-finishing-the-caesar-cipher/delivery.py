@@ -51,4 +51,4 @@ print("Letters:", letters)
 
 # ANSWER 
 # if "A" < character < "Z":   this line has the bug because it only checks between A and Z so it has to be corrected as
-# if "A" <= character <= "Z":  so it inclued A and Z as well
+# if "A" <= character <= "Z":  so it inclued A and Z as well"
