@@ -33,6 +33,6 @@ for character in ciphertext:
 print("Plaintext:",plaintext)
 
 #check if the message equal to plain text
-assert message == plaintext
+assert message == plaintext, "The encryption decryption loop doesn't close"
 
 
