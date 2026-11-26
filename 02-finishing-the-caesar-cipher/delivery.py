@@ -22,19 +22,15 @@ DAYS_IN_WEEK :int =7
 day:int = int(input("Day:"))   # 1 - 7 days
 days_to_wait:int = int(input("Days to Wait:" ))   #days_to_wait   # 0 -7 days
 
-delivery_day = day + days_to_wait
-
-#print(delivery_day)
+delivery_day:int = day + days_to_wait
 
 if delivery_day > DAYS_IN_WEEK :
-   Delivery_Day:int = delivery_day - DAYS_IN_WEEK
-   print("Delivery Day:", Delivery_Day)
-
-else:
-   print("delivery_day:", delivery_day)
+    delivery_day -= DAYS_IN_WEEK
+   
+print("delivery_day:", delivery_day)
 
 #delivery_day is from 1 to DAYS_IN_WEEK  
-assert 1 <= Delivery_Day <= DAYS_IN_WEEK
+assert 1 <= delivery_day <= DAYS_IN_WEEK
 
 print()
 
